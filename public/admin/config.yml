@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main # Branche principale de votre dépôt
+
+media_folder: "public/images/uploads" # Chemin vers les images sur votre site
+public_folder: "/images/uploads" # Chemin d'accès public aux images
+
+collections:
+  - name: "blog" # Nom de la collection
+    label: "Blog"
+    folder: "src/posts" # Chemin vers le dossier contenant les articles
+    create: true
+    slug: "{{slug}}" # Génération de l'URL
+    fields: # Champs pour chaque article
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }

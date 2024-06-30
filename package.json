@@ -34,5 +34,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "netlify-cms-app": "^2.15.72",
+    "netlify-cms-media-library-uploadcare": "^0.5.10"
   }
 }
